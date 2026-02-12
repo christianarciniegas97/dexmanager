@@ -1,0 +1,28 @@
+{
+  "name": "dexmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open" : "cypress open --e2e --browser=chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christianarciniegas97/dexmanager.git"
+  },
+  "keywords": [],
+  "author": "Christian Barrios",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/christianarciniegas97/dexmanager/issues"
+  },
+  "homepage": "https://github.com/christianarciniegas97/dexmanager#readme",
+  "devDependencies": {
+    "cypress": "^15.10.0",
+    "cypress-mochawesome-reporter": "^4.0.2"
+  },
+  "dependencies": {
+    "cypress-on-fix": "^1.1.0"
+  }
+}
