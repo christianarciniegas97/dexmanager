@@ -19,9 +19,10 @@ module.exports = defineConfig({
     },
     baseUrl:"https://demo4.dexmanager.com",
     specPattern: 'cypress/e2e/**/*.cy.js',
-    supportFile: false,
+    supportFile: "cypress/support/e2e.js",
     video: true,
     viewportWidth: 1440,
     viewportHeight: 1080,
+    includeShadowDom: true,
   },
 });
