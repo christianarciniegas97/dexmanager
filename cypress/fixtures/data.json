@@ -2,5 +2,10 @@
   "userRegister": {
     "user": "challengeqa",
     "password": "Abcd1234"
+  },
+  "invalidateData": {
+    "user": "usernotexist",
+    "password": "12345789",
+    "empty": "  "
   }
 }

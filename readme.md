@@ -47,6 +47,10 @@ HTML reports are available in the following directory:
 
    cypress/reports/index.html
 
+also it' generated a video  after cypress run with evidence on test in the folder 
+
+   cypress/videos
+
 --------------------------------------------------
 
 Project structure
@@ -57,3 +61,18 @@ Project structure
 - cypress/fixtures   → Test data (data-driven)
 - cypress/reports    → Test execution reports
 - cypress.config.js  → Cypress configuration
+
+
+--------------------------------------------------
+
+Technical Observation
+
+The login form inputs are implemented using Polymer Web Components, which encapsulate native `<input>` elements within Shadow DOM.
+
+By default, Cypress does not traverse Shadow DOM boundaries, which prevented reliable element selection and interaction during test execution.
+
+To resolve this, the `includeShadowDom: true` configuration was enabled in the Cypress setup, allowing Cypress to properly access and interact with Shadow DOM elements.
+
+Without this configuration, Cypress was unable to consistently locate the input elements, leading to test instability.
+
+This adjustment ensures stable, reliable, and maintainable end-to-end test automation.
