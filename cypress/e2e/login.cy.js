@@ -14,7 +14,7 @@ describe("Login tests", () =>{
         Dashboardpage.validateDashboard()
     });
 
-    it("should display error message with invalid credentials", () =>{
+    it("should display error message in pop up with invalid credentials", () =>{
         Loginpage.login(data.invalidateData.user, data.invalidateData.password)
         Loginpage.validatePopUpOfErrorLogin()
     });
